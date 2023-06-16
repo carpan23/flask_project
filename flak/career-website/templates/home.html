@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        #banner{
+            width: 100%;
+            height: 450px;
+        }
+           
+ 
+ </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-2 mb-3">
+            {{company}} carear
+        </h1>
+        <img class="img-fluid" id="banner" src="https://white-psychiatrist-xpqhc.ineuron.app:5000/static/banner.jpg"> -->
+        <h2>about</h2>
+        <p class="lead"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum, reprehenderit
+            assumenda rerum id atque
+            veniam voluptatum natus! Animi enim, illum iusto, sed beatae praesentium cumque illo a suscipit dolorum
+            sequi
+            corporis accusamus ab incidunt iure tempore blanditiis nisi doloribus! Ut quaerat doloribus in minima,
+            aspernatur ex incidunt, nisi accusamus deserunt laboriosam ea! Perferendis facilis minus sit voluptas hic
+            cumque
+            rem illum. Minus asperiores nulla expedita laudantium doloribus iusto, molestias perspiciatis facere, rem
+            error
+            suscipit officia ipsam, dicta sequi perferendis cumque voluptatum quam blanditiis? Odio accusamus eveniet
+            voluptatibus perferendis iure, error est ipsa vitae natus quam ratione tenetur deleniti repudiandae?</p>
+
+        <h2 class="text-center">listin</h2>
+        <p>
+            {% for job in job %}
+                    {% include 'job_templats.html' %}
+                {% endfor %}    
+            </div>
+        </p>
+        <div>
+            <button class="btn btn-primary btn-lg">contact</button>
+            <p>copy right2023</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
